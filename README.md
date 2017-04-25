@@ -15,8 +15,12 @@ To build the boxes, install [packer](https://packer.io) and
 
     packer build ansible.json
 
+To build with GUI (XFCE):
+
+    packer build ansible-gui.json
+
 This will build the boxes and generate Vagrant boxes in the current directory.
 
 To build only a specific box, you can use the "-only"-flag:
 
-    packer build -only=ansible ansible.json 
+    packer build -only=ansible ansible.json
