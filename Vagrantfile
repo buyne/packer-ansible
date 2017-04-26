@@ -53,7 +53,7 @@ Vagrant.configure("2") do |config|
      vb.customize ["modifyvm", :id, "--graphicscontroller", "vboxvga"]
      vb.customize ["modifyvm", :id, "--ioapic", "on"]
      vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
-     vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
+     vb.customize ["modifyvm", :id, "--accelerate3d", "off"]
      vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
    end
   #
